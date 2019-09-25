@@ -9,6 +9,7 @@ import baseUrl from "../utils/baseUrl";
 import catchErrors from "../utils/catchErrors";
 
 function Cart({ products, user }) {
+  console.log("on screen");
   const [cartProducts, setCartProducts] = React.useState(products);
   const [success, setSuccess] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
