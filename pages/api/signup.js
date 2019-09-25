@@ -35,7 +35,6 @@ export default async (req, res) => {
     });
     res.status(201).json(token);
   } catch (error) {
-    console.log(error);
     res.status(500).send("Error signing up user. Please try again later");
   }
 };

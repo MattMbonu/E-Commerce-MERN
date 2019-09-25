@@ -34,7 +34,7 @@ function Signup() {
     try {
       setLoading(true);
       setError("");
-      console.log(user);
+
       // make request to signup user
       const url = `${baseUrl}/api/signup`;
       const payload = { ...user };
